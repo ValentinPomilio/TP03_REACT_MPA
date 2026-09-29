@@ -1,9 +1,7 @@
 import { createContext, useState, useContext } from 'react';
 
-// 1. Crear el contexto (Clase 14)
 export const FavoritesContext = createContext();
 
-// 2. Componente Proveedor
 export function FavoritesProvider({ children }) {
   const [favorites, setFavorites] = useState([]);
 
@@ -13,7 +11,7 @@ export function FavoritesProvider({ children }) {
       if (exists) {
         return prevFavorites.filter((fav) => fav.id !== item.id);
       } else {
-        return [...prevFavorites, item]; // Patrón inmutable (Clase 9 & 14)
+        return [...prevFavorites, item]; 
       }
     });
   };
@@ -29,7 +27,6 @@ export function FavoritesProvider({ children }) {
   );
 }
 
-// Custom Hook para un acceso fácil y limpio (Clase 14 - Buenas prácticas)
 export function useFavorites() {
   const context = useContext(FavoritesContext);
   if (!context) {

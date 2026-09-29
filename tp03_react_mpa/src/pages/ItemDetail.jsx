@@ -115,7 +115,6 @@ export function ItemDetail() {
         </div>
       </div>
 
-      {/* Subrutas anidadas */}
       <div className="border-b border-slate-200 dark:border-slate-700 flex gap-6 mb-6">
         <NavLink
           to=""

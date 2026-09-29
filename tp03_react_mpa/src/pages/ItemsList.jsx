@@ -50,7 +50,6 @@ export function ItemsList() {
   if (error) return <div className="text-red-500 text-center py-10">{error}</div>;
 
   return (
-    // Grilla Mobile First: 1 col (móvil), 2 col (sm), 3 col (md), 4 col (lg)
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
       {items.map((item) => (
         <div

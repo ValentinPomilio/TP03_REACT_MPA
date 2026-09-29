@@ -1,7 +1,7 @@
 import { useOutletContext } from 'react-router-dom';
 
 export function ItemAbilitiesChild() {
-  const details = useOutletContext(); // Accede directamente al objeto que pasó el padre (Clase 13)
+  const details = useOutletContext(); 
 
   return (
     <div className="p-4 bg-slate-50 rounded-lg">
@@ -16,7 +16,7 @@ export function ItemAbilitiesChild() {
 }
 
 export function ItemReviewsChild() {
-  const details = useOutletContext(); // Accede al contexto del Outlet (Clase 13)
+  const details = useOutletContext();
 
   return (
     <div className="p-4 bg-slate-50 rounded-lg">
