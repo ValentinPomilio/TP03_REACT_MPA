@@ -5,9 +5,3 @@ PokéExplorer es una aplicación web desarrollada en React que permite explorar 
 
 ## API Utilizada
 - **PokéAPI**: https://pokeapi.co/
-
-## Pasos para ejecutar la aplicación de forma local
-
-1. Clonar el repositorio:
-   ```bash
-   git clone <URL_DE_TU_REPOSITO_GITHUB>
